@@ -39,7 +39,7 @@ function ticketDedupe() {
       if(emailThreads.length > 1){
 
         if(debug) console.log(emailThreads.length.toString() + ' found emails with ticket #' + "subject:"+ticketNum);
-        
+
         var i = 1; //don't archive the first email
         for(i;i<emailThreads.length;i++){
           emailThreads[i].markRead();
